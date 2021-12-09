@@ -55,15 +55,19 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
     transition-delay: 0ms;
+
+    &:focus {
+        border-color: $accent;
+    }
 }
   
   
-  /* лейбл выезжает из инпута */
+/* лейбл выезжает из инпута */
   /* .modal-form-input:focus + .modal-name {
     top: -18px;
     left: 0;
     transform: translateY(0);
-  } */
+} */
   
 .modal-icon { 
     position: absolute;
@@ -75,14 +79,10 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0ms;
-}
-  
-.modal-form-input:focus, .feedback:focus {
-    border-color: $accent;
-}
-  
-.modal-form-input:focus + .modal-icon {
-    fill: $accent;
+
+    .modal-form-input:focus + & {
+        fill: $accent;
+    }
 }
   
 .modal-form-feedback { 
@@ -114,11 +114,11 @@
     transition-delay: 0ms; */
 }
   
-  /* .feedback:focus + .modal-feedback {
+/* .feedback:focus + .modal-feedback {
     top: -18px;
     left: 0;
     transform: translateY(0);
-  } */
+ } */
   
 .feedback { 
     padding: 12px 16px;
@@ -133,15 +133,19 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
-}
-  
-.feedback::placeholder {
-  font-size: 12px;
-  line-height: 1.15;
-  
-  letter-spacing: 0.01em;
-  
-  color: rgba(117, 117, 117, 0.5);
+
+    &:focus {
+        border-color: $accent;
+    }
+
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.15;
+        
+        letter-spacing: 0.01em;
+        
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
   
 .modal-checkbox { 
@@ -158,11 +162,6 @@
     letter-spacing: 0.03em;
   
     color: $second-text;
-}
-  
-.modal-checkbox-input:checked + .modal-checkbox-text .checkbox-item { 
-    background-color: $accent;
-    border-color: $accent;
 }
   
 .checkbox-item { 
@@ -186,6 +185,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0ms;
+
+    .modal-checkbox-input:checked + .modal-checkbox-text & { 
+        background-color: $accent;
+        border-color: $accent;
+    }
 }
   
   

@@ -9,13 +9,13 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
 
+    & .footer-web {
+        color: $accent;
+    }
 }
 
-.footer-logo .footer-web {
-    color: $accent;
-}
 
-.footer.main { 
+.footer { 
     background-color: $third-background;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -26,9 +26,14 @@
     padding-top: 12px;
 }
 
+.footer-list {
+    .footer-link:hover, 
+    .footer-link:focus { 
+        color: $accent;
+    }
+}
 
-
-.footer-list .footer-link { 
+.footer-link { 
     color: rgba(255,255,255,0.6) ;
     transition-property: color;
     transition-duration: 250ms;
@@ -36,16 +41,13 @@
     transition-delay: 0;
 }
 
-.footer-list .footer-link:hover,
-.footer-list .footer-link:focus { 
-    color: $accent;
-}
 
-.container .address { 
+
+.address { 
     color: $third-text;
 }
 
-.container.footer{
+.footer-wrap {
     display: flex;
 }
 
@@ -76,21 +78,11 @@
     height: 44px;
     background-color: rgba(225,225,225, 0.1);
     border-radius: 50%;
+
+    &:nth-child(n+2) { 
+        margin-left: 10px;
+    }
 }
-.footer-social-item:nth-child(n+2) { 
-    margin-left: 10px;
-}
-
-
-/* Работает но не оч */
-.footer-social-link:hover ,
-.footer-social-link:focus { 
-    background-color: $accent;
-
-    outline: none;
-}
-
-
 
 .footer-social-link { 
     display: flex;
@@ -103,6 +95,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
+
+    &:hover ,
+    &:focus { 
+    background-color: $accent;
+
+    outline: none;
+}
 }
 
 .footer-socail-icon { 
@@ -144,18 +143,20 @@
     padding-left: 15px;
 
     min-width: 358px;
+
+    &::placeholder { 
+        font-size: 16px;
+        line-height: 1.25;
+    
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+    
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
-.footer-input-mail::placeholder { 
-    font-size: 16px;
-    line-height: 1.25;
 
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-
-    color: rgba(255, 255, 255, 0.6);
-}
 
 .footer-button-submit { 
     display: flex;
@@ -183,8 +184,5 @@
 
 .footer-submit-icon { 
     margin-left: 10px;
-}
-
-.footer-submit-icon { 
     fill: #FFFFFF;
 }
