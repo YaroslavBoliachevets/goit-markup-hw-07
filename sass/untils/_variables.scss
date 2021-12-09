@@ -1,4 +1,4 @@
-// Переменные
+// Переменные и глобальные стили
 
 
 /*  цвет основного текста #212121 */
@@ -30,6 +30,9 @@
 &background-icon-color:#F5F4FA;
   
 &backdrop: rgba(0, 0, 0, 0.2); 
+
+
+// глобальные стили
 
 body {
   background-color: &main-background;
@@ -90,23 +93,20 @@ p {
   height: auto;
 }
 
+// настройки списков
 .list { 
   list-style: none;
   margin: 0;
   padding-inline-start: 0;
 }
 
-/* Убирает подчеркивание ссылок */
-.nav .header-logo,
-.list .header-link, 
-.list .header-contacts-link,
-.list .footer-link, 
-.footer-logo {
-  text-decoration: none; 
+// убирает подчеркивание ссылок
+a {
+  text-decoration: none;
 }
 
 
-/* -----------Стилизация заголовков секций h2 ----------------*/
+// Стилизация заголовков секций h2 
 .section-title { 
   text-align: center;
 

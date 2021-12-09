@@ -27,7 +27,7 @@
  
    width: 100%;
    background-color: rgba(48,48,58,0.8);
-   color: var(--third-text);
+   color: &third-text;
  
    font-weight: 700;
    font-size: 14px;

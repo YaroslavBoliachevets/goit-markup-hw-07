@@ -1,7 +1,7 @@
 
 .hero { 
-  color: var(--third-text);
-  background-color: var(--third-background);
+  color: &third-text;
+  background-color: &third-background;
   text-align: center;
 
   padding-top: 200px;
@@ -26,8 +26,8 @@
 }
 
 .hero-button { 
-  color: var(--third-text);
-  background-color: var(--accent);
+  color: &third-text;
+  background-color: &accent;
   cursor: pointer;
 
 
