@@ -17,7 +17,7 @@
 .header-logo { 
   text-decoration: none;
 
-  color: &main-text;
+  color: $main-text;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -27,7 +27,7 @@
 
 
 .header-logo .header-web {
-  color: &accent;
+  color: $accent;
 }
 
 
@@ -37,7 +37,7 @@
 }
 
 .header-link.current { 
-  color: &accent;
+  color: $accent;
 }
 
 .header-item .current{ 
@@ -48,7 +48,7 @@
   content: '';
   width: 100%;
   height: 4px;
-  background-color: &accent;
+  background-color: $accent;
   position: absolute;
   display: block;
   bottom: -35px;
@@ -59,7 +59,7 @@
 /* --------------------Стилизация навигации------------------- */
 .header-link,
 .header-contacts-link { 
-  color: &main-text;
+  color: $main-text;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -78,25 +78,25 @@
 }
 
 .header-contacts-link { 
-  color: &second-text; 
+  color: $second-text; 
 }
 
 .header-link.now { 
-  color: &accent;
+  color: $accent;
 }
 
 .header-link:hover,
 .header-link:focus,
 .header-contacts-link:hover, 
 .header-contacts-link:focus { 
-  color: &accent; 
+  color: $accent; 
 }
 
 /* Работает, но не нравится */
 
 .header-contacts-link:hover .header-icon, 
 .header-contacts-link:focus .header-icon { 
-  color: &accent; 
+  color: $accent; 
 }
 
 .header-list-navigation, 
@@ -124,7 +124,7 @@
 
 .header-icon { 
   margin-right: 10px;
-  color: &second-text;
+  color: $second-text;
 }
 
 .header-tel-icon, .header-mail-icon { 

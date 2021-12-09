@@ -1,7 +1,7 @@
 
 .hero { 
-  color: &third-text;
-  background-color: &third-background;
+  color: $third-text;
+  background-color: $third-background;
   text-align: center;
 
   padding-top: 200px;
@@ -26,8 +26,8 @@
 }
 
 .hero-button { 
-  color: &third-text;
-  background-color: &accent;
+  color: $third-text;
+  background-color: $accent;
   cursor: pointer;
 
 

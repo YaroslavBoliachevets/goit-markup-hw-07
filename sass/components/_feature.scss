@@ -17,7 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: &background-icon-color;
+    background-color: $background-icon-color;
     border-radius: 4px;
   
     width: 270px;
@@ -38,7 +38,7 @@
   
   
 .feature-text {
-    color: &second-text;
+    color: $second-text;
     font-size: 14px;
     line-height: 1.71;
   

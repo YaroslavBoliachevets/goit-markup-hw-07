@@ -10,26 +10,24 @@
 /* Третичный цвет фона #2F303A */
 
 /* Portfolio.html 
-Фильтр background: #F5F4FA;
+Фильтр background: #F5F4FA;*/
 
-*/
+$main-text: #212121;
+$second-text: #757575;
+$third-text: #FFFFFF; 
 
-&main-text: #212121;
-&second-text: #757575;
-&third-text: #FFFFFF; 
+$main-background: #FFFFFF; 
+$second-background:#E5E5E5; 
+$third-background:#2F303A; 
 
-&main-background: #FFFFFF; 
-&second-background:#E5E5E5; 
-&third-background:#2F303A; 
+$accent:#2196F3;
 
-&accent:#2196F3;
+$portfolio-filter:#F5F4FA;
 
-&portfolio-filter:#F5F4FA;
-
-&icon-color: #AFB1B8; 
-&background-icon-color:#F5F4FA;
+$icon-color: #AFB1B8; 
+$background-icon-color:#F5F4FA;
   
-&backdrop: rgba(0, 0, 0, 0.2); 
+$backdrop: rgba(0, 0, 0, 0.2); 
 
 
 // глобальные стили
@@ -113,7 +111,7 @@ a {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
-  color: &main-text;
+  color: $main-text;
   
   margin-top: 0;
   margin-bottom: 50px;

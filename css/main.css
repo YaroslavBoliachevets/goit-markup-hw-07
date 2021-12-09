@@ -7,28 +7,12 @@
 /* Вторичный цвет фона #E5E5E5 */
 /* Третичный цвет фона #2F303A */
 /* Portfolio.html 
-Фильтр background: #F5F4FA;
-
-*/
-:root {
-  --main-text: #212121;
-  --second-text: #757575;
-  --third-text: #FFFFFF;
-  --main-background: #FFFFFF;
-  --second-background: #E5E5E5;
-  --third-background: #2F303A;
-  --accent: #2196F3;
-  --portfolio-filter: #F5F4FA;
-  --icon-color: #AFB1B8;
-  --background-icon-color: #F5F4FA;
-  --backdrop: rgba(0, 0, 0, 0.2);
-}
-
+Фильтр background: #F5F4FA;*/
 body {
-  background-color: var(--main-background);
+  background-color: body main-background;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  color: var(--main-text);
+  color: body main-text;
   text-align: left;
   letter-spacing: 0.03em;
   margin: 0;
@@ -87,22 +71,16 @@ p {
   padding-inline-start: 0;
 }
 
-/* Убирает подчеркивание ссылок */
-.nav .header-logo,
-.list .header-link,
-.list .header-contacts-link,
-.list .footer-link,
-.footer-logo {
+a {
   text-decoration: none;
 }
 
-/* -----------Стилизация заголовков секций h2 ----------------*/
 .section-title {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
-  color: var(--main-text);
+  color: #212121;
   margin-top: 0;
   margin-bottom: 50px;
 }
@@ -122,7 +100,7 @@ p {
 
 .header-logo {
   text-decoration: none;
-  color: var(--main-text);
+  color: #212121;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -130,7 +108,7 @@ p {
 }
 
 .header-logo .header-web {
-  color: var(--accent);
+  color: #2196F3;
 }
 
 /* полоска под навигацией   */
@@ -139,7 +117,7 @@ p {
 }
 
 .header-link.current {
-  color: var(--accent);
+  color: #2196F3;
 }
 
 .header-item .current {
@@ -150,7 +128,7 @@ p {
   content: '';
   width: 100%;
   height: 4px;
-  background-color: var(--accent);
+  background-color: #2196F3;
   position: absolute;
   display: block;
   bottom: -35px;
@@ -161,7 +139,7 @@ p {
 /* --------------------Стилизация навигации------------------- */
 .header-link,
 .header-contacts-link {
-  color: var(--main-text);
+  color: #212121;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -178,24 +156,24 @@ p {
 }
 
 .header-contacts-link {
-  color: var(--second-text);
+  color: #757575;
 }
 
 .header-link.now {
-  color: var(--accent);
+  color: #2196F3;
 }
 
 .header-link:hover,
 .header-link:focus,
 .header-contacts-link:hover,
 .header-contacts-link:focus {
-  color: var(--accent);
+  color: #2196F3;
 }
 
 /* Работает, но не нравится */
 .header-contacts-link:hover .header-icon,
 .header-contacts-link:focus .header-icon {
-  color: var(--accent);
+  color: #2196F3;
 }
 
 .header-list-navigation,
@@ -222,7 +200,7 @@ p {
 
 .header-icon {
   margin-right: 10px;
-  color: var(--second-text);
+  color: #757575;
 }
 
 .header-tel-icon, .header-mail-icon {
@@ -232,7 +210,7 @@ p {
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
-  color: var(--third-text);
+  color: #FFFFFF;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -241,11 +219,11 @@ p {
 }
 
 .footer-logo .footer-web {
-  color: var(--accent);
+  color: #2196F3;
 }
 
 .footer.main {
-  background-color: var(--third-background);
+  background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -265,11 +243,11 @@ p {
 
 .footer-list .footer-link:hover,
 .footer-list .footer-link:focus {
-  color: var(--accent);
+  color: #2196F3;
 }
 
 .container .address {
-  color: var(--third-text);
+  color: #FFFFFF;
 }
 
 .container.footer {
@@ -286,7 +264,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--third-text);
+  color: #FFFFFF;
   margin-bottom: 16px;
   text-align: center;
 }
@@ -309,7 +287,7 @@ p {
 /* Работает но не оч */
 .footer-social-link:hover,
 .footer-social-link:focus {
-  background-color: var(--accent);
+  background-color: #2196F3;
   outline: none;
 }
 
@@ -326,7 +304,7 @@ p {
 }
 
 .footer-socail-icon {
-  fill: var(--third-text);
+  fill: #FFFFFF;
 }
 
 /* Футер-подписка */
@@ -342,7 +320,7 @@ p {
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--third-text);
+  color: #FFFFFF;
 }
 
 .footer-submit-input-button {
@@ -350,8 +328,8 @@ p {
 }
 
 .footer-input-mail {
-  background-color: var(--third-background);
-  color: var(--third-text);
+  background-color: #2F303A;
+  color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding-top: 15px;
@@ -376,11 +354,11 @@ p {
   margin-left: 12px;
   min-width: 200px;
   height: 50px;
-  background-color: var(--accent);
-  color: var(--third-text);
+  background-color: #2196F3;
+  color: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-color: var(--accent);
+  border-color: #2196F3;
   text-transform: capitalize;
   font-weight: 700;
   font-size: 16px;
@@ -397,8 +375,8 @@ p {
 }
 
 .hero {
-  color: var(--third-text);
-  background-color: var(--third-background);
+  color: #FFFFFF;
+  background-color: #2F303A;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -417,8 +395,8 @@ p {
 }
 
 .hero-button {
-  color: var(--third-text);
-  background-color: var(--accent);
+  color: #FFFFFF;
+  background-color: #2196F3;
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
@@ -448,7 +426,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--background-icon-color);
+  background-color: #F5F4FA;
   border-radius: 4px;
   width: 270px;
   height: 120px;
@@ -464,7 +442,7 @@ p {
 }
 
 .feature-text {
-  color: var(--second-text);
+  color: #757575;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -495,7 +473,7 @@ p {
   padding: 27px;
   width: 100%;
   background-color: rgba(48, 48, 58, 0.8);
-  color: var(--third-text);
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -518,7 +496,7 @@ p {
 }
 
 .team {
-  background-color: var(--second-background);
+  background-color: #E5E5E5;
 }
 
 .team-list {
@@ -526,7 +504,7 @@ p {
 }
 
 .team-item {
-  background-color: var(--main-background);
+  background-color: #FFFFFF;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.122), 0px 1px 1px rgba(0, 0, 0, 0.141), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -544,7 +522,7 @@ p {
 }
 
 .team-text {
-  color: var(--second-text);
+  color: #757575;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -587,16 +565,16 @@ p {
 .social-link:hover,
 .social-link:focus {
   outline: none;
-  background-color: var(--accent);
+  background-color: #2196F3;
 }
 
 .social-link:hover .social-box,
 .social-link:focus .social-box {
-  fill: var(--third-text);
+  fill: #FFFFFF;
 }
 
 .social-box {
-  fill: var(--icon-color);
+  fill: #AFB1B8;
   transition-property: fill, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -622,7 +600,7 @@ p {
 
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
-  fill: var(--accent);
+  fill: #2196F3;
 }
 
 .clients-link:hover, .clients-link:focus {
@@ -635,7 +613,7 @@ p {
   justify-content: center;
   align-items: center;
   height: 90px;
-  border: 1px solid var(--icon-color);
+  border: 1px solid #AFB1B8;
   border-radius: 4px;
   transition-property: border;
   transition-duration: 250ms;
@@ -644,7 +622,7 @@ p {
 }
 
 .clients-icon {
-  fill: var(--icon-color);
+  fill: #AFB1B8;
   transition-property: fill, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -668,8 +646,8 @@ p {
 
 .list .filter-btn:hover, .list .filter-btn:focus {
   outline: none;
-  background-color: var(--accent);
-  color: var(--third-text);
+  background-color: #2196F3;
+  color: #FFFFFF;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.102), 0px 1px 2px rgba(0, 0, 0, 0.078), 0px 2px 2px rgba(0, 0, 0, 0.122);
 }
 
@@ -726,7 +704,7 @@ p {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: var(--accent);
+  background-color: #2196F3;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: transform;
@@ -740,13 +718,13 @@ p {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color: var(--third-text);
+  color: #FFFFFF;
 }
 
 .portfolio-link {
   display: block;
   text-decoration: none;
-  color: var(--main-text);
+  color: #212121;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -780,7 +758,7 @@ p {
 
 .portfolio-text {
   margin: 0;
-  color: var(--second-text);
+  color: #757575;
   font-size: 16px;
   line-height: 1.87;
   text-align: left;
@@ -798,7 +776,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--backdrop);
+  background-color: rgba(0, 0, 0, 0.2);
   transition-property: background-color, opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -818,7 +796,7 @@ p {
   transform: translate(-50%, -50%);
   width: 528px;
   min-height: 581px;
-  background-color: var(--main-background);
+  background-color: #FFFFFF;
   border-radius: 4px;
   transition-property: background-color, transform;
   transition-duration: 250ms;
@@ -834,7 +812,7 @@ p {
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--main-background);
+  background-color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -843,7 +821,7 @@ p {
 
 .modal-close:hover .icon-close-button,
 .modal-close:focus .icon-close-button {
-  fill: var(--accent);
+  fill: #2196F3;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -857,7 +835,7 @@ p {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-text);
+  color: #212121;
 }
 
 .modal-information {
@@ -874,7 +852,7 @@ p {
   font-size: 12px;
   line-height: 1.15;
   letter-spacing: 0.01em;
-  color: var(--second-text);
+  color: #757575;
   /* лейбл выезажет из инпута */
   /*top: 50%;
       left: 30px;
@@ -918,11 +896,11 @@ p {
 }
 
 .modal-form-input:focus, .feedback:focus {
-  border-color: var(--accent);
+  border-color: #2196F3;
 }
 
 .modal-form-input:focus + .modal-icon {
-  fill: var(--accent);
+  fill: #2196F3;
 }
 
 .modal-form-feedback {
@@ -939,7 +917,7 @@ p {
   font-size: 12px;
   line-height: 1.15;
   letter-spacing: 0.01em;
-  color: var(--second-text);
+  color: #757575;
   /* лейбл выезжает из инпута */
   /* top: 19px;
     left: 16px;
@@ -985,12 +963,12 @@ p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--second-text);
+  color: #757575;
 }
 
 .modal-checkbox-input:checked + .modal-checkbox-text .checkbox-item {
-  background-color: var(--accent);
-  border-color: var(--accent);
+  background-color: #2196F3;
+  border-color: #2196F3;
 }
 
 .checkbox-item {
@@ -1021,7 +999,7 @@ p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--accent);
+  color: #2196F3;
   text-decoration: underline;
 }
 
@@ -1033,8 +1011,8 @@ p {
   width: 200px;
   height: 50px;
   text-transform: capitalize;
-  background-color: var(--accent);
-  color: var(--third-text);
+  background-color: #2196F3;
+  color: #FFFFFF;
   border: 0;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

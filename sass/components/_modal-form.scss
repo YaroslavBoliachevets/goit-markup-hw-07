@@ -7,7 +7,7 @@
     text-align: center;
     letter-spacing: 0.03em;
   
-    color: &main-text;
+    color: $main-text;
 }
   
 .modal-information {
@@ -28,7 +28,7 @@
   
     letter-spacing: 0.01em;
   
-    color: &second-text;
+    color: $second-text;
   
     /* лейбл выезажет из инпута */
     /*top: 50%;
@@ -78,11 +78,11 @@
 }
   
 .modal-form-input:focus, .feedback:focus {
-    border-color: &accent;
+    border-color: $accent;
 }
   
 .modal-form-input:focus + .modal-icon {
-    fill: &accent;
+    fill: $accent;
 }
   
 .modal-form-feedback { 
@@ -102,7 +102,7 @@
   
     letter-spacing: 0.01em;
   
-    color: &second-text;
+    color: $second-text;
   
     /* лейбл выезжает из инпута */
     /* top: 19px;
@@ -157,12 +157,12 @@
   
     letter-spacing: 0.03em;
   
-    color: &second-text;
+    color: $second-text;
 }
   
 .modal-checkbox-input:checked + .modal-checkbox-text .checkbox-item { 
-    background-color: &accent;
-    border-color: &accent;
+    background-color: $accent;
+    border-color: $accent;
 }
   
 .checkbox-item { 
@@ -199,7 +199,7 @@
     line-height: 1.71;
   
     letter-spacing: 0.03em;
-    color: &accent;
+    color: $accent;
     text-decoration: underline;
 }
   
@@ -212,8 +212,8 @@
     height: 50px;
     text-transform: capitalize;
   
-    background-color: &accent;
-    color: &third-text;
+    background-color: $accent;
+    color: $third-text;
   
     border: 0;
     border-radius: 4px;
