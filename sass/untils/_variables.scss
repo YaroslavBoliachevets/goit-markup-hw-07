@@ -14,30 +14,28 @@
 
 */
 
-:root { 
-  --main-text: #212121;
-  --second-text: #757575;
-  --third-text: #FFFFFF; 
+&main-text: #212121;
+&second-text: #757575;
+&third-text: #FFFFFF; 
 
-  --main-background: #FFFFFF; 
-  --second-background:#E5E5E5; 
-  --third-background:#2F303A; 
+&main-background: #FFFFFF; 
+&second-background:#E5E5E5; 
+&third-background:#2F303A; 
 
-  --accent:#2196F3;
+&accent:#2196F3;
 
-  --portfolio-filter:#F5F4FA;
+&portfolio-filter:#F5F4FA;
 
-  --icon-color: #AFB1B8; 
-  --background-icon-color:#F5F4FA;
+&icon-color: #AFB1B8; 
+&background-icon-color:#F5F4FA;
   
-  --backdrop: rgba(0, 0, 0, 0.2); 
-}
+&backdrop: rgba(0, 0, 0, 0.2); 
 
 body {
-  background-color: var(--main-background);
+  background-color: &main-background;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  color: var(--main-text);
+  color: &main-text;
 
   text-align: left;
   letter-spacing: 0.03em;
@@ -105,4 +103,18 @@ p {
 .list .footer-link, 
 .footer-logo {
   text-decoration: none; 
+}
+
+
+/* -----------Стилизация заголовков секций h2 ----------------*/
+.section-title { 
+  text-align: center;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  color: &main-text;
+  
+  margin-top: 0;
+  margin-bottom: 50px;
 }
