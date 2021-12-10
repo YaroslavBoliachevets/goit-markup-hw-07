@@ -4,9 +4,9 @@
 }
   
 .filter-list { 
-    display: flex;
+    @include centeredFlex();
+
     margin-bottom: 50px;
-    justify-content: center;
     
     & .filter-btn:hover, 
     & .filter-btn:focus { 
@@ -25,6 +25,8 @@
   
   
 .filter-btn{
+    @include transition();
+
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
@@ -36,9 +38,5 @@
     padding: 6px 22px;
     border-radius: 4px;
   
-    transition-property: color, background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
 }
   

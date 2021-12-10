@@ -15,10 +15,9 @@
 }
   
 .feature-icon-container { 
-    display: flex;
+    @include centeredFlex();
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     background-color: $background-icon-color;
     border-radius: 4px;
   

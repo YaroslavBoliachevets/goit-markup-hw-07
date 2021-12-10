@@ -6,9 +6,7 @@
 }
 
 .header-container { 
-  display: flex;
-  align-items: center;
-  
+  @include centeredFlex();
 }
 
 .logo { 
@@ -32,9 +30,9 @@
 
 /* полоска под навигацией   */
 .header-link {
-  display: inline-flex;
-  align-items: center;
-  justify-items: center;
+  @include centeredFlex(inline-flex);
+  @include transition();
+  
   position: relative;
 
   color: $main-text;
@@ -42,11 +40,6 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
 
   &:hover, 
   &:focus { 
@@ -72,20 +65,14 @@
 
 /* --------------------Стилизация навигации------------------- */
 .header-contacts-link { 
-  display: inline-flex;
-  align-items: center;
-  justify-items: center;
+  @include centeredFlex(inline-flex);
+  @include transition();
 
   color: $second-text; 
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  letter-spacing: 0.02em; 
 
   &:hover, 
   &:focus { 

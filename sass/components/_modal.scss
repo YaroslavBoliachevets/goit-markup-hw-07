@@ -5,6 +5,8 @@
 }
   
 .backdrop { 
+    @include transition(background-color,opacity,visibility);
+
     position: fixed;
     top: 0;
     left: 0;
@@ -13,17 +15,13 @@
     height: 100%;
   
     background-color:$backdrop;
-  
-    transition-property: background-color, opacity, visibility;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
-    
 }
   
 
   
 .modal { 
+    @include transition(background-color,transform);
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -36,20 +34,16 @@
   
     background-color:$main-background;
     border-radius: 4px;
-  
-   
-    transition-property: background-color, transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
 
     .backdrop.is-hidden & { 
         transform: scale(1.5) rotate(180deg) translate(-1000px);
-        transition: transform 250ms;
+
+        @include transition(transform);
     }
 }
   
 .modal-close { 
+    @include centeredFlex();
     position: absolute;
     top: 8px;
     right: 8px;
@@ -61,9 +55,6 @@
     border: 1px solid rgba(0,0,0, 0.1);
     background-color: $main-background;
   
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
 }
 
@@ -72,10 +63,7 @@
     .modal-close:focus & {
     fill: $accent;
   
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
+    @include transition(fill);
     }
 }
   
