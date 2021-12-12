@@ -1,13 +1,9 @@
-.clients {
-  &.section { 
-  padding-top: 94px;}
-} 
 
-.clients-list { 
+.clients__list { 
   display: flex;
 }
 
-.clients-item { 
+.clients__item { 
   width: 170px;
   height: 92px;
 
@@ -17,7 +13,7 @@
   
 }
 
-.clients-link { 
+.clients__link { 
   @include centeredFlex();
   @include transition(border);
 
@@ -31,7 +27,7 @@
   }
 }
 
-.clients-icon { 
+.clients__icon { 
   fill:$icon-color;
 
   @include transition(fill transform);
