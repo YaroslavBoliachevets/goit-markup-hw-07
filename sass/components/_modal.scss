@@ -42,7 +42,7 @@
     }
 }
   
-.modal-close { 
+.modal__close { 
     @include centeredFlex();
     position: absolute;
     top: 8px;
@@ -58,9 +58,9 @@
     cursor: pointer;
 }
 
-.icon-close-button { 
-    .modal-close:hover &, 
-    .modal-close:focus & {
+.icon__close__button { 
+    .modal__close:hover &, 
+    .modal__close:focus & {
     fill: $accent;
   
     @include transition(fill);
