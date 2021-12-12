@@ -1,18 +1,16 @@
-.about-list { 
+.about__list { 
    display: flex;
-
-   margin: 0;
 }
  
-.about-item:nth-child(n+2) {
+.about__item:nth-child(n+2) {
    margin-left: 30px;
 }
  
-.about-meta { 
+.about__meta { 
    position: relative;
 }
  
-.about-after-title { 
+.about__after__title { 
    @include centeredFlex();
 
    position: absolute;
@@ -20,7 +18,7 @@
    width: 100%;
 }
  
-.about-label { 
+.about__label { 
    padding: 27px;
  
    width: 100%;

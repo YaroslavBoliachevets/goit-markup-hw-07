@@ -1,20 +1,12 @@
-.feature{
-    .section { 
-    padding-top: 94px;
-}
-}
-  
-.feature-list { 
+.feature__list { 
     display: flex;
-  
-    margin: 0;
 }
   
-.feature-item:nth-child(n+2) {
+.feature__item:nth-child(n+2) {
     margin-left: 30px;
 }
   
-.feature-icon-container { 
+.feature__icon__container { 
     @include centeredFlex();
     flex-direction: column;
 
@@ -28,7 +20,7 @@
 }
   
   
-.feature-title { 
+.feature__title { 
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -38,7 +30,7 @@
 }
   
   
-.feature-text {
+.feature__text {
     color: $second-text;
     font-size: 14px;
     line-height: 1.71;
