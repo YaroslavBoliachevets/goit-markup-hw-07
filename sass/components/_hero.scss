@@ -16,30 +16,13 @@
   
 }
 
-.hero-title { 
+.hero__title { 
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
 
   margin-top: 0;
-  margin-bottom: 0;
-}
-
-.hero-button { 
-  color: $third-text;
-  background-color: $accent;
-  cursor: pointer;
-
-
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  text-align: center;
-
-  min-width: 200px ;
-  min-height: 50px;
-  margin-top: 30px;
+  margin-bottom: 0px;
 }
 

@@ -197,22 +197,10 @@
     text-decoration: underline;
 }
   
-.form-button { 
+.form__button { 
     display:block;
     
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    width: 200px;
-    height: 50px;
-    text-transform: capitalize;
-  
-    background-color: $accent;
-    color: $third-text;
-  
-    border: 0;
-    border-radius: 4px;
-  
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
 }  
