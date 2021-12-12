@@ -2,7 +2,7 @@
     background-color: $second-background;
 }
 
-.team-pretitle { 
+.team__pretitle { 
     margin-bottom: 50px;
 }
   
@@ -50,11 +50,11 @@
     margin: 0 0 16px 0;
 }
   
-.social-list { 
+.social__list { 
     @include centeredFlex();
 }
   
-.social-item { 
+.social__item { 
     width: 44px;
     height: 44px;
     
@@ -86,8 +86,8 @@
   
     @include transition(background-color fill);
 
-    .social-link:hover &,
-    .social-link:focus & { 
+    .social__link:hover &,
+    .social__link:focus & { 
     fill: $third-text;
 }
 }

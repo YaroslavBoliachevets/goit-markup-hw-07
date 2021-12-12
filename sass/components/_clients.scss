@@ -32,8 +32,8 @@
 
   @include transition(fill transform);
 
-  .clients-link:hover &,
-  .clients-link:focus  & { 
+  .clients__link:hover &,
+  .clients__link:focus  & { 
   fill: $accent;
   }
 }
