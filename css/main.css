@@ -87,7 +87,7 @@ a {
   text-align: center;
   min-width: 200px;
   min-height: 50px;
-  margin-top: 30px;
+  margin-top: 0px;
   border: 0;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -243,7 +243,7 @@ a {
   padding-bottom: 60px;
 }
 
-.footer-social-container {
+.footer__social__container {
   margin-left: 70px;
   padding-top: 12px;
 }
@@ -273,7 +273,7 @@ a {
   margin-bottom: 8px;
 }
 
-.footer-title-link {
+.footer__title__link {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -284,22 +284,22 @@ a {
   text-align: center;
 }
 
-.footer-social-list {
+.footer__social__list {
   display: flex;
 }
 
-.footer-social-item {
+.footer__social__item {
   width: 44px;
   height: 44px;
   background-color: rgba(225, 225, 225, 0.1);
   border-radius: 50%;
 }
 
-.footer-social-item:nth-child(n+2) {
+.footer__social__item:nth-child(n+2) {
   margin-left: 10px;
 }
 
-.footer-social-link {
+.footer__social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -311,21 +311,21 @@ a {
   border-radius: 50%;
 }
 
-.footer-social-link:hover, .footer-social-link:focus {
+.footer__social__link:hover, .footer__social__link:focus {
   background-color: #2196F3;
   outline: none;
 }
 
-.footer-socail-icon {
+.footer__socail__icon {
   fill: #FFFFFF;
 }
 
 /* Футер-подписка */
-.footer-submit-container {
+.footer__submit__container {
   margin-left: auto;
 }
 
-.footer-form-text {
+.footer__form__text {
   padding-top: 12px;
   margin-bottom: 20px;
   font-weight: 700;
@@ -336,11 +336,11 @@ a {
   color: #FFFFFF;
 }
 
-.footer-submit-input-button {
+.footer__actions {
   display: flex;
 }
 
-.footer-input-mail {
+.footer__input__mail {
   background-color: #2F303A;
   color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -349,9 +349,10 @@ a {
   padding-bottom: 15px;
   padding-left: 15px;
   min-width: 358px;
+  height: 50px;
 }
 
-.footer-input-mail::placeholder {
+.footer__input__mail::placeholder {
   font-size: 16px;
   line-height: 1.25;
   display: flex;
@@ -367,7 +368,7 @@ a {
   margin-left: 12px;
 }
 
-.footer-submit-icon {
+.footer__submit__icon {
   margin-left: 10px;
   fill: #FFFFFF;
 }
@@ -389,7 +390,7 @@ a {
   line-height: 1.36;
   letter-spacing: 0.06em;
   margin-top: 0;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 
 .feature__list {
@@ -972,7 +973,7 @@ a {
   fill: #FFFFFF;
 }
 
-.modal-checkbox-link {
+.modal__checkbox__link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

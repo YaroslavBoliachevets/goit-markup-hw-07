@@ -16,7 +16,7 @@
     padding-bottom: 60px;
 }
 
-.footer-social-container { 
+.footer__social__container { 
     margin-left: 70px;
     padding-top: 12px;
 }
@@ -48,7 +48,7 @@
 
 }
 
-.footer-title-link { 
+.footer__title__link { 
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -61,11 +61,11 @@
 
 }
 
-.footer-social-list { 
+.footer__social__list { 
     display: flex;
 }
 
-.footer-social-item { 
+.footer__social__item { 
     width: 44px;
     height: 44px;
     background-color: rgba(225,225,225, 0.1);
@@ -76,7 +76,7 @@
     }
 }
 
-.footer-social-link { 
+.footer__social__link { 
     @include centeredFlex();
     @include transition(background-color transform);
 
@@ -91,18 +91,18 @@
 }
 }
 
-.footer-socail-icon { 
+.footer__socail__icon { 
     fill: $third-text;
 }
 
 /* Футер-подписка */
 
-.footer-submit-container { 
+.footer__submit__container { 
     margin-left: auto;
 
 }
 
-.footer-form-text { 
+.footer__form__text { 
     padding-top: 12px;
     margin-bottom: 20px;
 
@@ -115,11 +115,11 @@
     color: $third-text;
 }
 
-.footer-submit-input-button { 
+.footer__actions { 
     display: flex;
 }
 
-.footer-input-mail { 
+.footer__input__mail { 
     background-color: $third-background;
     color: $third-text;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -130,6 +130,7 @@
     padding-left: 15px;
 
     min-width: 358px;
+    height: 50px;
 
     &::placeholder { 
         font-size: 16px;
@@ -150,7 +151,7 @@
     margin-left: 12px;
 }
 
-.footer-submit-icon { 
+.footer__submit__icon { 
     margin-left: 10px;
     fill: #FFFFFF;
 }
