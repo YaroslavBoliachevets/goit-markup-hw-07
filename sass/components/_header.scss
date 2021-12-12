@@ -5,31 +5,23 @@
   padding-bottom: 25px;
 }
 
-.header-container { 
+.header--container { 
   @include centeredFlex();
 }
 
-.logo { 
-  margin-right: 50px;
-}
 
-.header-logo { 
-  text-decoration: none;
 
+.logo--header { 
   color: $main-text;
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.2;
 
-  & .header-web {
+  & .logo__accent {
     color: $accent;
   }
 }
 
 
 /* полоска под навигацией   */
-.header-link {
+.nav__link {
   @include centeredFlex(inline-flex);
   @include transition();
   
@@ -59,14 +51,14 @@
     height: 4px;
     background-color: $accent;
 
-    bottom: -35px;
+    bottom: -34px;
     left: 0;
     border-radius: 2px;
   }
 }
 
 /* --------------------Стилизация навигации------------------- */
-.header-contacts-link { 
+.contacts__link { 
   @include centeredFlex(inline-flex);
   @include transition();
 
@@ -85,42 +77,38 @@
 
 /* Работает, но не нравится */
 
-.header-list-navigation { 
+.nav__list { 
   display: flex;
-  margin: 0;
-  padding: 0 ;
 
 }
 
-.header-contacts-list { 
-  display: flex;
-  margin: 0;
-  padding: 0 ;
-}
-
-.header-item:nth-child(n+2) { 
+.nav__item:nth-child(n+2) { 
   margin-left: 50px;
 }
 
 
-.header-contacts-box { 
+.contacts { 
   margin-left: auto;
 }
 
-.header-icon { 
+.contacts__list { 
+  display: flex;
+}
+
+.contacts__item:nth-child(n+2) { 
+  margin-left: 50px;
+}
+
+.contacts__icon { 
   margin-right: 10px;
   color: $second-text;
 
-  .header-contacts-link:hover &, 
-  .header-contacts-link:focus & { 
+  .contacts__link:hover &, 
+  .contacts__link:focus & { 
   color: $accent; 
 }
 }
 
-.header-tel-icon { 
-  fill: currentColor;
-}
-
-.header-mail-icon { 
+.contacts--icon { 
   fill: currentColor;
 }

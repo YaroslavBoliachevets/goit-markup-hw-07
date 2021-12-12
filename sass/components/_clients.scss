@@ -34,7 +34,7 @@
 .clients-icon { 
   fill:$icon-color;
 
-  @include transition(fill, transform);
+  @include transition(fill transform);
 
   .clients-link:hover &,
   .clients-link:focus  & { 

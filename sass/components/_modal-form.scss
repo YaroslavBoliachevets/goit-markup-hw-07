@@ -162,7 +162,7 @@
   
 .checkbox-item { 
     @include centeredFlex();
-    @include transition(background-color, border);
+    @include transition(background-color border);
     /* иконка не оч нравится */
     /* position: absolute;
     left: 0;
