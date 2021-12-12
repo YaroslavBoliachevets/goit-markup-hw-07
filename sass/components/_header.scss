@@ -52,11 +52,13 @@
 
   &::after {
     content: '';
+    display: block;
+    position: absolute;
+
     width: 100%;
     height: 4px;
     background-color: $accent;
-    position: absolute;
-    display: block;
+
     bottom: -35px;
     left: 0;
     border-radius: 2px;
