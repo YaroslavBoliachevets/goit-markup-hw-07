@@ -1,9 +1,12 @@
+
+
+
 .filter { 
     padding-top: 94px;
     padding-bottom: 94px;
 }
   
-.filter-list { 
+.filter__list { 
     @include centeredFlex();
 
     margin-bottom: 50px;
@@ -19,12 +22,12 @@
 }
   
   
-.filter-item:nth-child(n+2) {
+.filter__item:nth-child(n+2) {
     margin-left: 30px;
 }
   
   
-.filter-btn{
+.filter__btn{
     @include transition();
 
     font-size: 16px;

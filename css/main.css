@@ -605,26 +605,26 @@ a {
   padding-bottom: 94px;
 }
 
-.filter-list {
+.filter__list {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filter-list .filter-btn:hover,
-.filter-list .filter-btn:focus {
+.filter__list .filter-btn:hover,
+.filter__list .filter-btn:focus {
   outline: none;
   background-color: #2196F3;
   color: #FFFFFF;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.102), 0px 1px 2px rgba(0, 0, 0, 0.078), 0px 2px 2px rgba(0, 0, 0, 0.122);
 }
 
-.filter-item:nth-child(n+2) {
+.filter__item:nth-child(n+2) {
   margin-left: 30px;
 }
 
-.filter-btn {
+.filter__btn {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -639,21 +639,21 @@ a {
   border-radius: 4px;
 }
 
-.portfolio-list {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.portfolio-item {
+.portfolio__item {
   margin-bottom: 50px;
   width: 370px;
 }
 
-.portfolio-item:not(:nth-child(3n+1)) {
+.portfolio__item:not(:nth-child(3n+1)) {
   margin-left: 30px;
 }
 
-.portfolio-item:nth-last-child(-n+3) {
+.portfolio__item:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
 
@@ -662,7 +662,7 @@ a {
   overflow: hidden;
 }
 
-.portfolio-meta {
+.portfolio__hover {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -674,12 +674,12 @@ a {
   transform: translateY(100%);
 }
 
-.portfolio-link:hover .portfolio-meta,
-.portfolio-link:focus .portfolio-meta {
+.portfolio-link:hover .portfolio__hover,
+.portfolio-link:focus .portfolio__hover {
   transform: translateY(-100%);
 }
 
-.portfolio-hover-text {
+.portfolio__hover__text {
   padding: 63px 24px;
   font-size: 18px;
   line-height: 1.56;
@@ -712,14 +712,14 @@ a {
   border: 1px solid #EEEEEE;
 }
 
-.portfolio-card {
+.portfolio__card {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-.portfolio-title {
+.portfolio__card__title {
   margin: 0;
   font-size: 18px;
   font-weight: 700;
@@ -727,7 +727,7 @@ a {
   text-align: left;
 }
 
-.portfolio-text {
+.portfolio__card__text {
   margin: 0;
   color: #757575;
   font-size: 16px;
