@@ -29,10 +29,8 @@
   
 .filter__btn{
     @include transition();
+    @include font($color:$main-text, $fw:500, $fz:16px, $fh:1.62, $ls:0.03em);
 
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.62;
     text-align: center;
   
     cursor:pointer; 

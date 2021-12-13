@@ -93,13 +93,8 @@
     top: -18px;
     left: 0;
     text-transform: capitalize;
-  
-    font-size: 12px;
-    line-height: 1.15;
-  
-    letter-spacing: 0.01em;
-  
-    color: $second-text;
+
+    @include font($color:$second-text, $fw:400,$fz:12px, $fh:1.15, $ls:0.01em)
   
     /* лейбл выезжает из инпута */
     /* top: 19px;
@@ -122,10 +117,7 @@
     width: 448px;
     resize: none;
   
-    font-size: 12px;
-    line-height: 1.15;
-  
-    letter-spacing: 0.01em;
+    @include font($color:$second-text, $fw:400, $fz:12px, $fh:1.15, $ls:0.01em);
   
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -151,13 +143,8 @@
   
 .modal__checkbox__label { 
     @include centeredFlex();
+    @include font($color:$second-text, $fw:400, $fz:14px, $fh:1.71, $ls:0.03em);
 
-    font-size: 14px;
-    line-height: 1.71;
-  
-    letter-spacing: 0.03em;
-  
-    color: $second-text;
     cursor: pointer;
 }
   
@@ -190,11 +177,8 @@
 }
   
 .modal__checkbox__link { 
-    font-size: 14px;
-    line-height: 1.71;
-  
-    letter-spacing: 0.03em;
-    color: $accent;
+    @include font($color:$accent, $fw:400, $fz:14px, $fh:1.71, $ls:0.03em);
+
     text-decoration: underline;
 }
   

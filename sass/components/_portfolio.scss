@@ -45,11 +45,8 @@
   
 .portfolio__hover__text { 
     padding: 63px 24px;
-  
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    color: $third-text;
+
+    @include font($color:$third-text, $fz:18px, $fw:400, $fh:1.56, $ls:0.03em);
 }
   
   
@@ -90,10 +87,8 @@
   
 .portfolio__card__title{
     margin: 0;
-  
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 2;
+
+    @include font($color:$main-text, $fz:18px, $fw:700, $fh:2, $ls:0.06em);
     text-align: left;
 }
   

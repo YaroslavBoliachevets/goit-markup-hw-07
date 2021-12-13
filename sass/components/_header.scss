@@ -24,14 +24,9 @@
 .nav__link {
   @include centeredFlex(inline-flex);
   @include transition();
-  
-  position: relative;
+  @include font($color:$main-text, $fz:14px, $fw:500, $fh:1.14, $ls:0.02em);
 
-  color: $main-text;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  position: relative;
 
   &:hover, 
   &:focus { 
@@ -61,12 +56,7 @@
 .contacts__link { 
   @include centeredFlex(inline-flex);
   @include transition();
-
-  color: $second-text; 
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em; 
+  @include font($color:$second-text, $fz:14px, $fw:500, $fh:1.14, $ls:0.02em);
 
   &:hover, 
   &:focus { 

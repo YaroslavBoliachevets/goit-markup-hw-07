@@ -28,18 +28,16 @@
 } 
   
 .team__title { 
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.19;
+    @include font($color:$main-text, $fz:16px, $fw:500, $fh:1.19, $ls:0.03em);
+
     text-align: center;
   
     margin: 0 0 10px 0;
 }
   
 .team__text { 
-    color: $second-text;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font($color:$second-text, $fz:16px, $fw:500, $fh:1.19, $ls:0.03em);
+
     text-align: center;
   
     padding: 0;

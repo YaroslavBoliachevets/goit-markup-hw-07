@@ -17,10 +17,7 @@
 }
 
 .hero__title { 
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  @include font($color:$main-text, $fw:900 $fz:44px, $fh:1.36, $ls:0.06em)
 
   margin-top: 0;
   margin-bottom: 30px;

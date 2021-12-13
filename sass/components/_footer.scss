@@ -49,16 +49,12 @@
 }
 
 .footer__social__title { 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+    @include font($color:$third-text, $fw:700, $fz:14px, $fh:1.14, $ls:0.03em);
 
-    color: $third-text;
-    margin-bottom: 16px;
+    text-transform: uppercase;
     text-align: center;
 
+    margin-bottom: 16px;
 }
 
 .footer__social__list { 
@@ -103,16 +99,13 @@
 }
 
 .footer__form__text { 
+    @include font($color:$third-text, $fw:700, $fz:14px, $fh:1.15, $ls:0.03em);
+    
     padding-top: 12px;
     margin-bottom: 20px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: $third-text;
 }
 
 .footer__actions { 

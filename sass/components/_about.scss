@@ -19,16 +19,13 @@
 }
  
 .about__label { 
+   @include font($color:$third-text, $fz:14px, $fw:700, $fh:1.14, $ls:0.03em);
+
    padding: 27px;
  
    width: 100%;
    background-color: rgba(48,48,58,0.8);
-   color: $third-text;
  
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 1.14;
    text-align: center;
-   letter-spacing: 0.03em;
    text-transform: uppercase;
 }
