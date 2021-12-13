@@ -433,8 +433,8 @@ a {
 }
 
 .section__about {
-  margin-top: 0;
-  margin-bottom: 94px;
+  padding-top: 0;
+  padding-bottom: 94px;
 }
 
 .about__list {
