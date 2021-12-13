@@ -30,6 +30,10 @@
   
   
 .feature__text {
-    @include font($color:$second-text, $fz:14px, $fw:500, $fh:1.71, $ls:0.03em);
+    @include font($color:$second-text, $fz:14px, $fw:400, $fh:1.71, $ls:0.03em);
   
+}
+
+.footer__button { 
+    text-transform: capitalize;
 }
