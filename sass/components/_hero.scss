@@ -17,7 +17,7 @@
 }
 
 .hero__title { 
-  @include font($color:$main-text, $fw:900 $fz:44px, $fh:1.36, $ls:0.06em)
+  @include font($color:$third-text, $fw:900, $fz:44px, $fh:1.36, $ls:0.06em);
 
   margin-top: 0;
   margin-bottom: 30px;
