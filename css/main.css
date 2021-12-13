@@ -121,23 +121,23 @@ a {
   padding-bottom: 25px;
 }
 
-.header--container {
+.header_container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.logo--header {
+.logo__link_header {
   color: #212121;
 }
 
-.logo--header .logo__accent {
+.logo__link_header .logo__accent {
   color: #2196F3;
 }
 
 /* полоска под навигацией   */
 .nav__link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   transition-property: color;
@@ -174,7 +174,7 @@ a {
 
 /* --------------------Стилизация навигации------------------- */
 .contacts__link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   transition-property: color;
@@ -243,17 +243,17 @@ a {
   padding-bottom: 60px;
 }
 
-.footer__social__container {
+.footer__social {
   margin-left: 70px;
   padding-top: 12px;
 }
 
-.footer-list .footer-link:hover,
-.footer-list .footer-link:focus {
+.footer__address__list .footer__address__link:hover,
+.footer__address__list .footer__address__link:focus {
   color: #2196F3;
 }
 
-.footer-link {
+.footer__address__link {
   color: rgba(255, 255, 255, 0.6);
   transition-property: color;
   transition-duration: 250ms;
@@ -269,11 +269,11 @@ a {
   display: flex;
 }
 
-.footer-item:nth-child(-n+2) {
+.footer__address__item:nth-child(-n+2) {
   margin-bottom: 8px;
 }
 
-.footer__title__link {
+.footer__social__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -340,7 +340,7 @@ a {
   display: flex;
 }
 
-.footer__input__mail {
+.footer__actions__mail {
   background-color: #2F303A;
   color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -352,7 +352,7 @@ a {
   height: 50px;
 }
 
-.footer__input__mail::placeholder {
+.footer__actions__mail::placeholder {
   font-size: 16px;
   line-height: 1.25;
   display: flex;
@@ -802,7 +802,7 @@ a {
   transition-delay: 0;
 }
 
-.modal__title {
+.form__title {
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 20px;
@@ -817,7 +817,7 @@ a {
   margin-bottom: 30px;
 }
 
-.modal__name {
+.modal__information__name {
   position: absolute;
   top: -18px;
   left: 0;
@@ -838,7 +838,7 @@ a {
     */
 }
 
-.modal__input {
+.modal__information__input {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -852,7 +852,7 @@ a {
   outline: none;
 }
 
-.modal__input:focus {
+.modal__information__input:focus {
   border-color: #2196F3;
 }
 
@@ -862,7 +862,7 @@ a {
     left: 0;
     transform: translateY(0);
 } */
-.modal__icon {
+.modal__information__icon {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -873,7 +873,7 @@ a {
   transform: translateY(-50%);
 }
 
-.modal__input:focus + .modal__icon {
+.modal__information__input:focus + .modal__information__icon {
   fill: #2196F3;
 }
 
@@ -882,7 +882,7 @@ a {
   margin-bottom: 20px;
 }
 
-.label__feedback {
+.modal__feedback__label {
   display: inline-block;
   position: absolute;
   top: -18px;
@@ -907,7 +907,7 @@ a {
     left: 0;
     transform: translateY(0);
  } */
-.feedback {
+.modal__feedback__text {
   padding: 12px 16px;
   width: 448px;
   resize: none;
@@ -919,11 +919,11 @@ a {
   outline: none;
 }
 
-.feedback:focus {
+.modal__feedback__text:focus {
   border-color: #2196F3;
 }
 
-.feedback::placeholder {
+.modal__feedback__text::placeholder {
   font-size: 12px;
   line-height: 1.15;
   letter-spacing: 0.01em;
@@ -934,7 +934,7 @@ a {
   position: relative;
 }
 
-.modal__checkbox__text {
+.modal__checkbox__label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -942,9 +942,10 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  cursor: pointer;
 }
 
-.checkbox__span {
+.modal__checkbox__span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -964,12 +965,12 @@ a {
   border-radius: 2px;
 }
 
-.modal__checkbox__input:checked + .modal__checkbox__text .checkbox__span {
+.modal__checkbox__input:checked + .modal__checkbox__label .modal__checkbox__span {
   background-color: #2196F3;
   border-color: #2196F3;
 }
 
-.checkbox__icon {
+.modal__checkbox__icon {
   fill: #FFFFFF;
 }
 

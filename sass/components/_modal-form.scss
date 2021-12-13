@@ -1,4 +1,4 @@
-.modal__title  { 
+.form__title  { 
     margin-bottom: 30px;
   
     font-weight: 700;
@@ -16,7 +16,7 @@
 }
   
   
-.modal__name { 
+.modal__information__name { 
     position: absolute;
     top: -18px;
     left: 0;
@@ -41,7 +41,7 @@
     */
 }
   
-.modal__input { 
+.modal__information__input { 
     @include transition(border-color);
 
     width: 100%;
@@ -67,7 +67,7 @@
     transform: translateY(0);
 } */
   
-.modal__icon { 
+.modal__information__icon { 
     @include transition(fill);
 
     position: absolute;
@@ -76,7 +76,7 @@
     transform: translateY(-50%);
   
 
-    .modal__input:focus + & {
+    .modal__information__input:focus + & {
         fill: $accent;
     }
 }
@@ -86,7 +86,7 @@
     margin-bottom: 20px;
 }
   
-.label__feedback { 
+.modal__feedback__label { 
     display: inline-block;
     
     position: absolute;
@@ -117,7 +117,7 @@
     transform: translateY(0);
  } */
   
-.feedback { 
+.modal__feedback__text { 
     padding: 12px 16px;
     width: 448px;
     resize: none;
@@ -149,7 +149,7 @@
     position: relative;
 }
   
-.modal__checkbox__text { 
+.modal__checkbox__label { 
     @include centeredFlex();
 
     font-size: 14px;
@@ -158,9 +158,10 @@
     letter-spacing: 0.03em;
   
     color: $second-text;
+    cursor: pointer;
 }
   
-.checkbox__span { 
+.modal__checkbox__span { 
     @include centeredFlex();
     @include transition(background-color border);
     /* иконка не оч нравится */
@@ -176,7 +177,7 @@
     border: 2px solid rgba(33, 33, 33, 1);
     border-radius: 2px;
 
-    .modal__checkbox__input:checked + .modal__checkbox__text & { 
+    .modal__checkbox__input:checked + .modal__checkbox__label & { 
         background-color: $accent;
         border-color: $accent;
     }
@@ -184,7 +185,7 @@
   
   
   
-.checkbox__icon {
+.modal__checkbox__icon {
     fill: #FFFFFF;
 }
   

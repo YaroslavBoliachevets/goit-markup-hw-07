@@ -5,13 +5,13 @@
   padding-bottom: 25px;
 }
 
-.header--container { 
+.header_container { 
   @include centeredFlex();
 }
 
 
 
-.logo--header { 
+.logo__link_header { 
   color: $main-text;
 
   & .logo__accent {
