@@ -5,7 +5,7 @@
 }
   
 .backdrop { 
-    @include transition(background-color opacity visibility);
+    @include transition($property:all);
 
     position: fixed;
     top: 0;
@@ -20,7 +20,7 @@
 
   
 .modal { 
-    @include transition(background-color transform);
+    @include transition($property:all);
 
     position: absolute;
     top: 50%;

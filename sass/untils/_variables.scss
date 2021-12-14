@@ -33,10 +33,10 @@ $backdrop: rgba(0, 0, 0, 0.2);
 // глобальные стили
 
 body {
-  background-color: &main-background;
+  background-color: $main-background;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  color: &main-text;
+  color: $main-text;
 
   text-align: left;
   letter-spacing: 0.03em;

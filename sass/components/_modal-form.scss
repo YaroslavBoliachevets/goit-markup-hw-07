@@ -150,7 +150,7 @@
   
 .modal__checkbox__span { 
     @include centeredFlex();
-    @include transition(background-color border);
+    @include transition($property:all);
     /* иконка не оч нравится */
     /* position: absolute;
     left: 0;

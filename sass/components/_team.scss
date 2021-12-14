@@ -65,7 +65,7 @@
   
 .social__link { 
     @include centeredFlex();
-    @include transition(background-color transform);
+    @include transition($property:all);
 
     border-radius: 50%;
     
@@ -82,7 +82,7 @@
 .social__box { 
     fill: $icon-color;
   
-    @include transition(background-color fill);
+    @include transition($property:all);
 
     .social__link:hover &,
     .social__link:focus & { 

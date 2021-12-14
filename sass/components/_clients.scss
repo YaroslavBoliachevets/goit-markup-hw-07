@@ -30,7 +30,7 @@
 .clients__icon { 
   fill:$icon-color;
 
-  @include transition(fill transform);
+  @include transition($property:all);
 
   .clients__link:hover &,
   .clients__link:focus  & { 

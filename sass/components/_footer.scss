@@ -74,7 +74,7 @@
 
 .footer__social__link { 
     @include centeredFlex();
-    @include transition(background-color transform);
+    @include transition($property:all);
 
     height: 44px;
     border-radius: 50%;
